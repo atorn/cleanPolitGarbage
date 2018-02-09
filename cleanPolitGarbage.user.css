@@ -1,0 +1,602 @@
+/* === AllPolitCorrect v.35.2018.2.7. Fix bad styles === */
+
+/* ======= regnum ======= */@-moz-document domain("regnum.ru"){
+
+p, ul.headlineslist a, .newsbody, .parttop a, ul.news-feed a{font-family: Verdana,sans-serif}
+
+a[href*="24smi.org"]{color: #aa3!important}
+
+}/* ======= vz ======= */@-moz-document domain("vz.ru"){
+
+body{font-family: Verdana,sans-serif}
+.text{font-size: 88%}
+#copyrights.up{bottom: auto;}
+}/* ======= cassad ======= */@-moz-document domain('cassad.net'),domain('voicesevas.ru'){
+body{background: none!important}
+.wrapper, .wwide{
+	width: 99.9%;
+	min-width: 0;
+}
+nav.site_navigation ul.menu > li > a{padding-left: 7px; padding-right: 7px;}
+.wrapper{width: 99.8%;}
+.wrapper .dpad{width: 98%!important; padding: 0 0 16px 8px;}
+#midside img {
+	max-width: 100%;
+}
+#sidebar img{max-width: 100%;}
+input, textarea, select, button, body {
+	font-family: Verdana,"Open Sans",sans-serif;
+}
+.clr.berrors,
+.featured_carousel.owl-carousel.owl-theme
+,.widget.widget_banner_300x250, #header .banner, .post_footer .post_sharing, .post_footer .content_banner, .post_footer .banner, #comments ~.alert.alert_red
+, .search_block .top_navigation li a:not(.s_rss):not(#loginlink):not([href*="register"]), .top_navigation li:first-child >span{display: none!important;}
+.base.fullstory .div_share{height: auto; min-height: 3em}
+#vk_groups
+,#footer
+,#copyright
+,#seedr-player
+,#comments .alert.alert_red
+  {display: none!important}
+
+}/* ======= politrussia ======= */@-moz-document domain('politrussia.com'){
+	body{overflow-x: hidden;}
+	#wrap{min-width: 0;}
+	.post .post_container blockquote, .redactor_editor blockquote{
+		margin: -1em 0 0 40px!important;
+		padding: 12px 10px 10px;
+		background-color: transparent!important;}
+	blockquote p{margin: 0;}
+	.aligner{width: auto;}
+	#center{
+		width: 77%;
+		max-width: 940px;
+		padding: 0 12px;}
+	#side{width: 20%; margin-left: 0}
+	#side img{max-width: 100%;}
+.top_banner,.donate-img{display: none;}
+.video-carousels .carousel-navigation{
+	max-width: 80%;
+	width: 200px;
+}
+.news_item{
+	margin-right: 1%;
+	width: 32%;
+}
+.colm3{
+	margin-left: 1%;
+	width: 32%;
+}
+.preview_post .txt .text, .post .post_container *{font-size: 16px!important; line-height: 22px!important;}
+.quote_1{
+	margin-bottom: .3em!important;
+	padding: 7px 2px 0 45px;
+	border-top: 1px solid #c5bcb4 !important
+}
+.quote_1 .quote_mark, .quote_bottom{display: none;}
+.quote_4 .quote_text{
+	font-family: Verdana,Helvetica,sans-serif;}
+
+.soc_btn, .social{display: none!important} /*politrussia*/
+	a[href*="telegram.me/politrussiachannel"]{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		height: 4em;
+		background-color: #eee;
+		color: #ddd;}
+}/* =======antifashist.com ======= */@-moz-document domain('antifashist.com'){
+#gkBannerTop, .smiad, #gkBottom5{display: none!important}
+
+}/* =======rt.com ======= */@-moz-document domain('rt.com'){
+.trc_related_container{display: none!important}
+
+}/* =======fapnews.ru ======= */@-moz-document domain('fapnews.ru'){
+div[id^="trava"], .one_history_war +.one_history_war, .block_title +.one_history_war, .nnn-block{display: none!important}
+
+}/* ======= topwar.ru - собственная мусорная сеть (directadvert) ======= */@-moz-document domain('topwar.ru'){
+	a[href*="da.topwar.ru/"]
+	,#day_pic,.banner_vert block,.news-block-magick{display: none!important}
+}/* ======= press smi2,24smi,lentainform,mpuls.ru - но это всё закрыто в RuAdlist+EasyLinst (AdBlock+) ======= */@-moz-document
+domain('rg.ru'),
+domain('vz.ru'),
+domain('pravda-tv.ru'),
+domain('antifashist.com'),
+domain('news-front.info'),
+domain('in24.org'),
+domain('interpolit.ru'),
+domain('defendingrussia.ru'),
+domain('vpk-news.ru'),
+domain('stockinfocus.ru'),
+domain('agitpro.su'),
+domain('military-informant.com'),
+domain('discussio.ru'),
+domain('riafan.ru'),
+domain('contextap.ru'),
+domain('rueconomics.ru'),
+domain('politrussia.com'),
+domain('fapnews.ru'),
+domain('politobzor.net'),
+domain('1prime.ru'),
+domain('novorosinform.org')
+,domain('cassad.net')
+,domain('aif.ru')
+,domain('gazeta.ru')
+,domain('vesti.ru')
+,domain('tass.ru')
+,domain('rt.com')
+,domain('rsute.ru'), domain('news.gnezdo.ru')
+,domain('www.vestifinance.ru')
+,domain('www.vedomosti.ru')
+,domain('www.finanz.ru')
+,domain('forbes.ru')
+,domain('tvzvezda.ru')
+,domain('rusnext.ru')
+,domain('ridus.ru')
+,domain('aftershock.news')
+,domain('ren.tv')
+,domain('www.dni.ru')
+,domain('glav.su')
+,domain('topwar.ru'){
+	a[href*="mpuls.ru/"]
+	,a[href*="smi2.ru/"] /*на сайте tass это названо спецпроектом tass*/
+	,a[href*="24smi.org/"]
+	,a[href*="24smi.info/"]
+	,a[href*="lentainform.com/"]
+	,a[href*="//pnews/"]
+	,a[href*="finam.ru/"]
+	,a[href*="trava.io/"]
+	,a[href*="adwile.com/"]
+	,a[href*="vsluh.net/"]
+	,a[href*="actionteaser.ru/"]
+	,a[href*="jhf.ru/"]
+	,a[href*=".nnn.ru/"]
+	,a[href*="news.gnezdo.ru/"]
+	,a[href*="mediarepost.ru/"]
+	,a[href*="www.marketgid.com/"]
+	,a[href*="relap.io/"]
+	,a[href*="news.mirtesen.ru/"]
+		{display: none!important; height: 0!important; overflow: hidden!important;}
+	img[src*="smi2.net/"]
+	,img[src*="24smi.net/"]
+	,img[src*="img.mpuls.ru/"]
+	,img[src*="trava.io/"]
+	,img[src*="adwile.com/"]
+	,img[src*="tz.topwar.ru/"]
+	,img[src*="actionteaser.ru/"]
+	,img[src*="jhf.ru/"]
+	,img[src*=".nnn.ru/"]
+	,img[src*="zn2.gnezdo.ru/"]
+	,img[src*="imgn.marketgid.com/"]
+		{display: none!important}
+	/* politobzor.net */.owl-wrapper{display: none!important; height: 0!important;}
+
+}/* ======= press lentainform ======= */@-moz-document domain('politrussia.com'),domain('pravda-tv.ru'),domain('pravdatv2.ru'){
+	a[href*="lentainform.com/"]
+	,a[href*="smi2."]
+	,div[class*="adbanner_"]
+	,div[class*="mgs_marb_"]
+	,img[src*="lentainform.com/"]{display: none!important}
+
+}/* ======= press soc nets ======= */@-moz-document domain('rg.ru'),domain('aif.ru'),domain('regnum.ru'),domain('news-front.info'),domain('interpolit.ru'),domain('vpk-news.ru'),domain('stockinfocus.ru'),domain('riafan.ru'),domain('jpgazeta.ru'),domain('voenvesti.ru'){
+	#left_floater .share, /*regnum*/
+	.soc_top_list, /*aif*/
+	.rg-header-social-b.group, /*rg*/
+	#secondary .widget_text, /*news-front*/
+	#vk_groups, /*interpolit, vpk-news*/
+	.beacon9-social, /*vpk-news*/
+	.clearfix.soc_wid{display: none!important} /*aif*/
+}/* ======= indents for cackle forum ======= */@-moz-document domain('naspravdi.info'){
+	.mc-comment-wrap{margin-left: 40px}
+
+}/* ======= topwar.ru: hide blocks ======= */@-moz-document domain('topwar.ru'){
+	.smi_div_img_3200{display: none!important}
+	.sidebar div[id^="smi_teaser"] a[href*="24smi.info/"]{padding:0!important;}
+	.sidebar div[id^="smi_teaser"] a, .sidebar div[id^="unit_"] [class^="sk_wrap"] a, .sidebar div[id^="LentaInform"] .mctitle a, .sidebar div[id^="unit_"] tr > td:nth-of-type(2) a, .sidebar div[id^="smi2adblock"] tr > td:nth-of-type(2) a, .sidebar div[id^="DIV_DA"] tr table tr > td:nth-of-type(2) a,
+	.sidebar div[id^="smi_teaser"] a[class^="smi_a_img"], .sidebar div[id^="unit_"] [class^="sk_wrap"] a:nth-of-type(1), .sidebar div[id^="LentaInform"] .image-container, .sidebar div[id^="unit_"] tr > td:nth-of-type(1) a, .sidebar div[id^="smi2adblock"] tr > td:nth-of-type(1) a, .sidebar div[id^="DIV_DA"] tr table tr > td:nth-of-type(1) a{height:0!important; padding:0!important;}
+
+}/* ======= lifenews.ru: hide blocks ======= */@-moz-document domain('lifenews.ru'){
+	#widget-socials, .lifecorr-banner, .banner, .relap-default__preloader, #orphus, .block-notice, #vn-player{display: none!important}
+
+}/* ======= nahnews.org: hide blocks ======= */@-moz-document domain('nahnews.org'){
+	.PSingleNews
+		{display: none!important}
+	.wallpaper .author-bar2-inside{padding-top:0; padding-bottom:0;}
+	h1 {font: 300 28px/30px Roboto}
+	.article2{font-family: auto}
+}/* ======= glav.su: hide blocks ======= */@-moz-document domain('glav.su'){
+	.c-bl-a .__lxG__multi,
+	.c-bl-a >#yandex_ad,
+	.c-bl-a >[id*=yandex_rtb], .ya-share2, #yandex_ad
+		{display: none!important}
+	table.l >tbody >tr >td >.l-c >div >table.f +br +div[style="text-align: justify;"]
+		{column-count: 2;}
+	table.l >tbody >tr >td >.l-c >div >table.f +br +div[style="text-align: justify;"] img
+		{width: auto; height: auto}
+
+}/* ======= cont.ws: hide blocks ======= */@-moz-document domain('cont.ws'){
+	.article2 .adv2, .post .promobar
+	,body >.fill
+	,body >.header2
+	,#seedr-player
+	,div[id*="yandex"],#Ya_sync_1
+	,.post .poll,.content .poll
+		{display: none!important}
+	.wallpaper .author-bar2-inside{padding-top:0; padding-bottom:0;}
+	h1 {font: 300 28px/30px Roboto}
+	.article2{font-family: auto}
+}
+
+
+
+/* === AllPolitCorrect-aftershock v.35.2018.2.7. Fix bad styles === */
+/* ======= aftershock.news: hide blocks ======= */@-moz-document domain('aftershock.news'), regexp('https?://aftershock\.news\.https\.*'){
+	.comment_forbidden,
+	.aft-header_right,
+	.aft-header_left,
+	#backtotop,
+	.aft-shapes,
+	body >div >iframe[id]:not(.cke_panel_frame),
+	.banner_right,
+	div[id*="yandex"],
+	.addthis_jumbo_share,
+	#block-block-16,
+	.aft-block img[height],
+	.gsc-control-cse div, .block.block-block,
+	a[href*="node/486178"],a[href*="node/551240"],
+	#block-cumulus-1
+	  {display: none!important}
+	.aft-blockcontent a,
+	.aft-blockcontent a.hover,
+	.aft-comment-content a,
+	.aft-comment-content a:link,
+	.aft-postheadericons a,
+	.aft-postheadericons a.hover,
+	.aft-comment-header a,
+	.aft-comment-header a.hovered,
+	.publication-tags-item a,
+	.publication-tags-item a:focus,
+	.publication-tags-category-item a,
+	.publication-tags-category-item a:focus,
+	.field-type-text-with-summary a,
+	.field-type-text-long a,
+	.aft-postheader a,
+	.aft-postheader a:link
+		{padding-bottom: 5px; transition-property: none}
+	.aft-blockcontent a:hover,
+	.aft-blockcontent a.hover,
+	.aft-comment-content a:hover,
+	.aft-comment-content a:link:hover,
+	.aft-postheadericons a:hover,
+	.aft-postheadericons a.hover,
+	.aft-comment-header a:hover,
+	.aft-comment-header a.hovered,
+	.publication-tags-item a:hover,
+	.publication-tags-item a:focus,
+	.publication-tags-category-item a:hover,
+	.publication-tags-category-item a:focus,
+	.field-type-text-with-summary a:hover,
+	.field-type-text-long a:hover,
+	.aft-postheader a:hover,
+	.aft-postheader a:link:hover{color: #c85343!important}
+	.aft-postheader a, .aft-postheader a:link{
+		padding-top:7px;
+		outline-width: 0;
+		line-height: 1em;
+		font-size: 15px!important;
+		font-weight: 600;
+		color: rgba(62,60,53,.85);}
+	.aft-postheader, .aft-postheader h1, .aft-postheader span{
+		padding-top:5px;
+		line-height: 1em;
+		font-size: 17px !important;
+		font-weight: 600;
+		color: rgba(74,76,79,.7);}
+	.aft-postheadericons .aft-postauthoricon img,
+	.aft-comment-header .aft-commentacc img{min-width: 0; max-width: 5px!important; margin: 0 -2px}
+	.aft-postheadericons a:hover, .aft-postheadericons a.hover{font-style: normal}
+	a{padding-bottom: 5px}
+	.aft-logo-fade, .aft-logo-fade img{height: 20px!important}
+	.top_articles_selectors, .top_discussions_selectors{background:rgba(47,64,84,.56)}
+	#top_articles_week_selector.statist_selector.top_articles_selector.active,
+	#top_discussions_hour_selector.statist_selector.top_discussions_selector.active,
+	#top_rating_day_selector.statist_selector.top_rating_selector.active
+		{background:rgba(170,51,16,.6)}
+	#top_articles_year_selector, #top_discussions_week_selector,
+	#top_rating_month_selector,#top_articles_month_selector, #top_discussions_day_selector,
+	#top_rating_week_selector
+		{background:rgba(160,163,164,.77)}
+	.aft-postcontent a.aft-button:hover,#top_articles_month_selector:hover,
+	#top_discussions_day_selector:hover,#top_rating_week_selector:hover,
+	#top_articles_year_selector:hover,#top_discussions_week_selector:hover,
+	#top_rating_month_selector:hover
+		{background:rgba(125, 71, 36, 0.48); cursor:pointer}
+	.aft-block  img[height="25"]{display: block!important; visibility: hidden}
+	.aft-block .aft-blockpics:hover  img[height="25"]{visibility: visible}
+	.aft-comment{position:relative}
+	.aft-comment a[href="/?q=user/19214"]
+	,.aft-comment a[href="/?q=user/22046"]
+	,.aft-comment a[href="/?q=user/26959"]
+	,.aft-comment a[href="/?q=user/25108"]
+	,.aft-comment a[href="/?q=user/2142"]{position:absolute; top:0; bottom:0; right:0; left:0; background:#eee}
+	.aft-comment a.username[href="/?q=user/19214"]
+	,.aft-comment a.username[href="/?q=user/22046"]
+	,.aft-comment a.username[href="/?q=user/26959"]
+	,.aft-comment a.username[href="/?q=user/25108"]
+	,.aft-comment a.username[href="/?q=user/2142"]{color:#ddd; opacity:1}
+	.aft-comment:hover a{position:static}
+	.aft-header{height: auto}
+	.opengraph-filter .left{width: auto; float: right; margin-left: 4px}
+	.opengraph-filter .right{margin-left: auto}
+	.more-link{text-align: left}
+	#block-statist-top-articles{margin-top: 80px}
+	.aft-postcontent p{font-size: 14px;}
+	a.aft-button, a.aft-button:link, body a.aft-button:link, a.aft-button:visited, body a.aft-button:visited, input.aft-button, button.aft-button{padding: 1px 4px 2px 3px}
+	blockquote {
+		margin: -5px 0 -5px 13px;
+		padding: 0 0 0 2px;
+		border: 1px dotted #ccdbe3;
+		border-left: 2px solid #b6c5ce;
+		background: #f2f5f7;}
+	blockquote:first-child{margin: 4px 0 -7px 13px;}
+	div.spoiler div.spoiler-content{
+		line-height:1.26;
+		margin: -3px -6px;
+		padding: 3px 6px;
+		border-top: 1px solid #bbb;}
+	div.spoiler div.spoiler-title{padding: 2px 3px 2px 5px;}
+	/*сжатие левого сайдбара*/
+	#block-system-main-menu, #block-user-login, #block-system-user-menu, #block-aggregator-feed-8,
+	#block-pretty-calendar-calendar, #block-statist-top-rating{
+		display:block;
+		position: fixed;
+		z-index: 8;
+		top: 22px;
+		left:-9px;
+		min-width: 24px;
+		height:22px;
+		border: 1px solid #ccc;
+		background: rgba(255,255,255,.7);
+		transition: opacity .04s}
+	#block-user-login, #block-system-user-menu{z-index: 7; top:44px}
+	#block-aggregator-feed-8{z-index: 6; top:66px}
+	#block-pretty-calendar-calendar{z-index: 5; top:88px}
+	#block-statist-top-rating{z-index: 4; top:110px}
+	.aft-blockheader{position: relative;
+		z-index: 7;
+		left:-3px;
+		min-height:22px;
+		padding:3px 0 0!important;
+		opacity:.39;
+		transition: opacity .2s}
+	.region-sidebar-left .aft-blockheader:hover, .region-top1 .aft-blockheader:hover{left:-27px; opacity:.31}
+	.aft-block{width: auto!important; float: none!important; margin:0 -7px 0 0}
+	#block-system-main-menu:hover, #block-user-login:hover, #block-system-user-menu:hover,
+	#block-aggregator-feed-8:hover, #block-pretty-calendar-calendar:hover,
+	#block-statist-top-rating:hover
+		{left: 16px; height:auto; background: #fff}
+	#block-system-main-menu .aft-block, #block-user-login .aft-block, #block-system-user-menu .aft-block,
+	#block-aggregator-feed-8 .aft-block, #block-pretty-calendar-calendar .aft-block,
+	#block-statist-top-rating .aft-block
+		{width:1.9em!important; height: 1.4em; overflow:hidden}
+	#block-system-main-menu .aft-block:hover,
+	#block-user-login .aft-block:hover, #block-system-user-menu .aft-block:hover,
+	#block-aggregator-feed-8 .aft-block:hover,
+	#block-pretty-calendar-calendar .aft-block:hover, #block-statist-top-rating .aft-block:hover
+		{overflow:inherit; width: auto!important; height: auto; float:left!important; background: #fff; opacity:.7}
+	.aft-content-layout .aft-sidebar1{width: 1em}
+	#reformal_tab{height:6px; padding:0; opacity:.4; transition: all .2s}
+	#reformal_tab:hover{height:auto; padding: 5px 10px 0 0; opacity:.85}
+	#tiptip_holder.tip_right{}
+	/*лид.рейт*/
+	.top_rating_informer a{font-size: inherit!important}
+	#block-statist-top-rating .aft-blockcontent{font-size: inherit}
+	#block-statist-top-rating .aft-blockcontent p{margin:0}
+	.aft-blockpics{width: auto; margin-right: 3px}
+	#block-statist-top-rating .aft-blockpics >div{display: inline-block; font-size: inherit}
+	#block-statist-top-rating .aft-blockrefs{width: auto; font-size: inherit}
+	#block-statist-top-rating .aft-blockrefs a{font-size: inherit}
+	.top_rating_informers img{width: 18px}
+	/*колонки*/
+	article.aft-article{columns: 377px}
+	.aft-commentsform,
+	#comments{columns: 420px}
+	.video-filter{position: relative; overflow: hidden; margin:-10px; padding: 10px; background-color:#e6e6e6}
+	.video-filter:hover{z-index: 2; overflow: inherit}
+	/*справа*/
+	.region-sidebar-right .aft-blockheader{padding-bottom:3px}
+	/*коммент*/
+	#block-system-main, .aft-comments.comment-wrapper
+		{border-bottom: 7px solid #eee; margin-bottom: -7px; padding-bottom: 4px}
+	.node .field-name-field-teaser-image a{max-width:25px!important}
+	.aft-comment-avatar{
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+		top: 2px;
+		width: auto;
+		height: auto; opacity: .24;
+		min-width:25px!important;
+		min-height:22px!important;
+		margin: -11px 9px -2px 0;}
+	#comments >.aft-comment{margin-left:-2px}
+	#comments >.aft-comment .aft-comment-avatar{margin:-9px 9px -4px 0}
+	.aft-comment .user-picture{position:static; margin-right:0}
+	.user-picture img[src*="default_avatar.png"]{display:none}
+	.user-picture img{
+		max-width:25px!important;
+		margin:-1px;
+		border:1px solid rgba(35,30,30,.45);}
+	#comments >h2.aft-postheader{opacity: .39}
+	#comments.aft-commentsform >h3{float: left; margin: 1px 10px 0 0; opacity: .39}
+	#comments.aft-commentsform >h3:after{content:'/'}
+	#edit-author--2 .form-item{margin:-1px 0}
+	.aft-commentsform label{line-height: 16px; opacity: .39}
+	.aft-commentsform label:after{content:': '}
+	#comment-body-add-more-wrapper .form-item-comment-body-und-0-value label{display: none}
+	.cke_top{padding: 3px 3px 0 4px}
+	.cke_top .cke_toolbar .cke_toolgroup{margin: 0 3px 2px 0}
+	.cke_top .cke_toolbar .cke_toolgroup a.cke_button{padding: 2px 3px}
+	.cke_top .cke_toolbar .cke_combo .cke_combo_text{overflow:inherit; padding-left: 3px; width: 42px;}
+	.user-picture img:hover
+		{border: 1px solid rgba(209,84,51,.5)}
+	.aft-comment-header a.username{font-style: italic; color: #a18d64; opacity: .8;}
+	.comment .aft-commentauthorage{font-style: italic; color: #a18d64; opacity: .55;}
+	.aft-comment .comment_date{
+		position:relative;
+		top: 1px;
+		margin-left:-50%;
+		font-style: italic;
+		background:#fff;
+		color: #a18d64;
+		opacity: .6}
+	.aft-commentcountryicon img, .comment .permalink_img{opacity: .41;}
+	.comment .parent_img,
+	.comment .memorize_img{position:relative; z-index:2; opacity: .31;}
+	.comment .parent_img{position: relative; top: -9px; left: 14px;}
+
+	.aft-comment-avatar:hover,
+	.aft-comment-header a.username:hover,
+	.comment .aft-commentauthorage:hover,
+	.aft-comment .comment_date:hover,
+	.aft-commentcountryicon img:hover,
+	.comment .permalink_img:hover,
+	.comment .parent_img:hover,
+	.comment .memorize_img:hover{opacity:1}
+	/*скрытия полей в заголовках в цепочках ответов*/
+	#comments >.aft-postcontent:not(:hover) .aft-comment-avatar,
+	.indented1:not(:hover) .aft-comment-avatar,
+	#comments >.aft-postcontent:not(:hover) .aft-commentauthorage,
+	.indented1:not(:hover) .aft-commentauthorage,
+	#comments >.aft-postcontent:not(:hover) .comment_date,
+	.indented1:not(:hover) .comment_date,
+	#comments >.aft-postcontent:not(:hover) .permalink_img,
+	.indented1:not(:hover) .permalink_img,
+	#comments >.aft-postcontent:not(:hover) .memorize_img,
+	.indented1:not(:hover) .memorize_img
+		{visibility: hidden}
+	#comments >.aft-postcontent:hover .aft-comment-avatar,
+	.indented1:hover .aft-comment-avatar,
+	.indented2:hover .aft-comment-avatar,
+	.indented0:hover .aft-comment-avatar,
+	#comments >.aft-postcontent:hover .aft-commentauthorage,
+	.indented1:hover .aft-commentauthorage,
+	.indented2:hover .aft-commentauthorage,
+	.indented0:hover .aft-commentauthorage,
+	#comments >.aft-postcontent:hover .comment_date,
+	.indented1:hover .comment_date,
+	.indented2:hover .comment_date,
+	.indented0:hover .comment_date,
+	#comments >.aft-postcontent:hover .permalink_img,
+	.indented1:hover .permalink_img,
+	.indented2:hover .permalink_img,
+	.indented0:hover .permalink_img,
+	#comments >.aft-postcontent:hover .memorize_img,
+	.indented1:hover .memorize_img,
+	.indented2:hover .memorize_img,
+	.indented0:hover .memorize_img
+		{visibility: visible}
+	#comments >.aft-postcontent:not(:hover) .new,
+	.indented1:not(:hover) .new
+		{opacity:.17}
+	#comments >.aft-postcontent:hover .new,
+	.indented1:hover .new,
+	.indented2:hover .new,
+	.indented0:hover .new
+		{opacity:1}
+	/*под шапкой коммента*/
+	.aft-comment-inner{position: relative; margin-bottom:0}
+	.aft-comment-content.content{margin: 2px 0}
+	.aft-comment-content.content .user-signature{
+		position:absolute;
+		bottom:0;
+		left:-14px;
+		z-index: 1;
+		overflow: hidden;
+		width:1.1em;
+		height:1.9em;
+		white-space: nowrap;
+		background-color: rgba(214, 148, 81, 0.5);}
+	.aft-comment-content.content .user-signature .field-label{background-color: transparent; color: rgb(112, 88, 14);}
+	.aft-comment-content.content .user-signature .field-item{padding-left: 7px; background-color: rgb(190, 136, 97);}
+	.aft-comment-content.content .user-signature:hover{
+		padding-left: 12px;
+		width:auto;
+		height:auto;
+		white-space: initial;
+		background-color: transparent;}
+	.aft-comment-content.content .user-signature:hover .field-label{padding-left: 7px; background-color: rgba(201, 196, 185, 0.5); color: rgb(164, 146, 111)}
+	.comment{margin-bottom:0; padding: 0 0 2px 5px}
+	.comment span.new{padding: 0 3px; font-size: 12px; background-color: #cfa57c; color: #ffe}
+	.comment p:first-child{margin-top:0}
+	.comment p:last-child{margin-bottom:0}
+	p >img[src*="smile"],
+	img[src^="https://aftershock.news/sites/all/libraries/ckeditor/plugins/smiley/"]
+		{max-width:16px!important; margin:-3px 0 -1px!important}
+	.aft-comment-footer{position:absolute; z-index:1; top:-.1em; right:0}
+	.aft-comment-footer ul.links{position:relative; overflow: inherit; width: 1.2em}
+	.aft-comment-footer ul.links >li{
+		overflow: hidden;
+		display:block;
+		width: 1.2em;
+		margin-right:-1.1em;
+		line-height:.9em;
+		white-space: nowrap;
+		background-color:rgba(255,255,255,.7);}
+	.aft-comment-footer ul.links > li.first{width: 1.5em}
+	.aft-comment-footer ul.links > li.first.last{margin:.8em -1.4em 0 .2em}
+	.aft-comment-footer ul.links > li.first.last:hover
+		{width: 5.2em; margin-right: -4.9em}
+	.aft-comment-footer ul.links >li{border:1px solid transparent}
+	.aft-comment-footer ul.links >li:hover{width:5.2em; margin-right:-5.1px; border:1px solid #999}
+	.cke_reset{border: 1px solid #e6e6e6}
+	/*футер*/
+	.aft-pager{position:static; display:inline-block; margin: 0 7px;}
+	.aft-pager ~.aft-pager, .indented1 +h2 +.aft-pager, .aft-postcontent +h2 +.aft-pager
+		{position: fixed; display: block; left:-7px; bottom:8px; height: 26px; padding:0 0 8px}
+	.aft-pager ~.aft-pager:hover, .indented1 +h2 +.aft-pager:hover{height: 29px; padding:0;}
+	.aft-pager:hover{margin-top: 6px; background-color: rgba(215,215,221,.55)}
+	.aft-pager >span.more{opacity:0}
+	.aft-pager >span,.aft-pager >a{padding: 1px 7px 7px; opacity:.4}
+	.aft-pager:hover >span:not(.more),.aft-pager:hover >a{padding: 1px 7px 7px; opacity:.85}
+}/* ======= m.aftershock.news: 2 cols ==== */@-moz-document domain('m.aftershock.news'), regexp('https?://m.aftershock\.news\.https\.*'){
+	.aft-layout-wrapper{margin-top:0}
+	#block-system-main{border-bottom: 7px solid #eee; margin-bottom: -7px}
+	article.aft-article{columns: 430px}
+	#comments{columns: 570px}
+	article.aft-article h1{padding-top: 14px}
+	#var1{
+		display:block;
+		position: fixed;
+		background: rgba(255,255,255,.7);
+		z-index: 1;
+		height:22px;
+		min-height: 20px;
+		width: 1px;
+		border: 1px solid #ddd;
+	}
+ 	#block-system-main-menu, #block-user-login, #block-system-user-menu{left:-11px; min-width:18px}
+	#block-system-main-menu:hover, #block-user-login:hover, #block-system-user-menu:hover{left:7px}
+	#block-system-main-menu .aft-block, #block-user-login .aft-block, #block-system-user-menu .aft-block
+		{width:1.4em!important}
+	.node .field-name-field-teaser-image a,.user-picture img{max-width:20px!important; margin-top:-7px}
+	.aft-comment-inner{margin-bottom:0}.aft-comment-content.content{margin:2px 0}
+	#comments >.aft-comment .aft-comment-avatar, .aft-comment-avatar{margin:0}
+	.comment p:first-child{margin-top:0}.comment p:last-child{margin-bottom:0}
+	.aft-comment:not(:hover) .aft-comment-footer{display: none}
+	.aft-comment-footer ul.links{width: 2.2em!important;}
+	.aft-comment-footer ul.links >li{
+		position: relative;
+		width: 2.2em!important;
+		padding: 0;
+		list-style-type: none;}
+	.aft-comment-footer ul.links >li:hover{
+		left:-3.4em;
+		width:6.5em!important;
+		margin-right:-6.4px!important;
+		border:1px solid #999;}
+	.aft-comment-footer ul.links >li a{font-weight: bold!important;}
+	.aft-comment-footer ul.links >li a:hover{font-weight: bold!important; color: #f00!important}
+	p >img[src*="smile"]
+	,img[src^="https://aftershock.news/sites/all/libraries/ckeditor/plugins/smiley/"]{max-width:16px!important; margin:-3px 0 -1px!important}
+}
