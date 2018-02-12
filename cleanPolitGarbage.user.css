@@ -1,4 +1,4 @@
-/* === AllPolitCorrect v.35.2018.2.7. Fix bad styles === */
+/* === AllPolitCorrect v.36.2018.2.10. Fix bad styles === */
 
 /* ======= regnum ======= */@-moz-document domain("regnum.ru"){
 
@@ -229,7 +229,7 @@ domain('novorosinform.org')
 
 
 
-/* === AllPolitCorrect-aftershock v.35.2018.2.7. Fix bad styles === */
+/* === AllPolitCorrect-aftershock v.36.2018.2.10. Fix bad styles === */
 /* ======= aftershock.news: hide blocks ======= */@-moz-document domain('aftershock.news'), regexp('https?://aftershock\.news\.https\.*'){
 	.comment_forbidden,
 	.aft-header_right,
@@ -305,8 +305,9 @@ domain('novorosinform.org')
 	#top_articles_year_selector, #top_discussions_week_selector,
 	#top_rating_month_selector,#top_articles_month_selector, #top_discussions_day_selector,
 	#top_rating_week_selector
-		{background:rgba(160,163,164,.77)}
-	.aft-postcontent a.aft-button:hover,#top_articles_month_selector:hover,
+		{background:rgba(137, 132, 129,.77)}
+	.aft-postcontent a.aft-button:hover{background:rgba(111,33,3,.5); cursor:pointer}
+	#top_articles_month_selector:hover,
 	#top_discussions_day_selector:hover,#top_rating_week_selector:hover,
 	#top_articles_year_selector:hover,#top_discussions_week_selector:hover,
 	#top_rating_month_selector:hover
@@ -345,6 +346,7 @@ domain('novorosinform.org')
 		padding: 3px 6px;
 		border-top: 1px solid #bbb;}
 	div.spoiler div.spoiler-title{padding: 2px 3px 2px 5px;}
+	img[src*="aftershock.news/sites/default/files/favicon.png"]{max-width: 22px!important; margin-top:-4px!important}
 	/*сжатие левого сайдбара*/
 	#block-system-main-menu, #block-user-login, #block-system-user-menu, #block-aggregator-feed-8,
 	#block-pretty-calendar-calendar, #block-statist-top-rating{
@@ -401,13 +403,16 @@ domain('novorosinform.org')
 	article.aft-article{columns: 377px}
 	.aft-commentsform,
 	#comments{columns: 420px}
-	.video-filter{position: relative; overflow: hidden; margin:-10px; padding: 10px; background-color:#e6e6e6}
-	.video-filter:hover{z-index: 2; overflow: inherit}
+	.video-filter{position: relative; overflow: hidden; margin:-10px; padding: 10px; background-color:rgba(195, 195, 195, 0.6)}
+	div.video-filter:hover{z-index: 2; overflow: inherit}
 	/*справа*/
 	.region-sidebar-right .aft-blockheader{padding-bottom:3px}
-	/*коммент*/
-	#block-system-main, .aft-comments.comment-wrapper
+	/*комменты*/
+	#block-system-main:not(:last-child), .aft-comments.comment-wrapper:not(:last-child)
 		{border-bottom: 7px solid #eee; margin-bottom: -7px; padding-bottom: 4px}
+	#comments{margin: .6em 0;}
+	#comments >h2.aft-postheader{opacity: .39}
+	/*коммент*/
 	.node .field-name-field-teaser-image a{max-width:25px!important}
 	.aft-comment-avatar{
 		display: inline-block;
@@ -427,17 +432,31 @@ domain('novorosinform.org')
 		max-width:25px!important;
 		margin:-1px;
 		border:1px solid rgba(35,30,30,.45);}
-	#comments >h2.aft-postheader{opacity: .39}
-	#comments.aft-commentsform >h3{float: left; margin: 1px 10px 0 0; opacity: .39}
+	/*Ввод коммента*/
+	#comments.aft-commentsform{position: relative; margin: .6em 0;}
+	#edit-author--2{position: absolute; top: -.6em; left: 11.7em;}
+	#comments.aft-commentsform >h3{
+		position: absolute;
+		top: -.5em;
+		float: left;
+		margin: 1px 10px 0 0;
+		opacity: .39;}
 	#comments.aft-commentsform >h3:after{content:'/'}
 	#edit-author--2 .form-item{margin:-1px 0}
 	.aft-commentsform label{line-height: 16px; opacity: .39}
 	.aft-commentsform label:after{content:': '}
 	#comment-body-add-more-wrapper .form-item-comment-body-und-0-value label{display: none}
+	.resizable-textarea{break-inside: avoid-column; -webkit-column-break-inside: avoid; page-break-inside: avoid; display: inline-block}
 	.cke_top{padding: 3px 3px 0 4px}
 	.cke_top .cke_toolbar .cke_toolgroup{margin: 0 3px 2px 0}
 	.cke_top .cke_toolbar .cke_toolgroup a.cke_button{padding: 2px 3px}
 	.cke_top .cke_toolbar .cke_combo .cke_combo_text{overflow:inherit; padding-left: 3px; width: 42px;}
+	.cke_contents.cke_reset{height: 130px}
+	.cke_reset{border: 1px solid #e6e6e6}
+	body.cke_editable{margin: 7px 12px}
+	body.cke_editable p{margin: 6px 0}
+	.cke_bottom{padding:0;}
+
 	.user-picture img:hover
 		{border: 1px solid rgba(209,84,51,.5)}
 	.aft-comment-header a.username{font-style: italic; color: #a18d64; opacity: .8;}
@@ -449,7 +468,7 @@ domain('novorosinform.org')
 		font-style: italic;
 		background:#fff;
 		color: #a18d64;
-		opacity: .6}
+		opacity:.6;}
 	.aft-commentcountryicon img, .comment .permalink_img{opacity: .41;}
 	.comment .parent_img,
 	.comment .memorize_img{position:relative; z-index:2; opacity: .31;}
@@ -510,7 +529,7 @@ domain('novorosinform.org')
 	.aft-comment-content.content .user-signature{
 		position:absolute;
 		bottom:0;
-		left:-14px;
+		left:-15px;
 		z-index: 1;
 		overflow: hidden;
 		width:1.1em;
@@ -549,10 +568,13 @@ domain('novorosinform.org')
 		{width: 5.2em; margin-right: -4.9em}
 	.aft-comment-footer ul.links >li{border:1px solid transparent}
 	.aft-comment-footer ul.links >li:hover{width:5.2em; margin-right:-5.1px; border:1px solid #999}
-	.cke_reset{border: 1px solid #e6e6e6}
 	/*футер*/
+	.node-teaser:not(:last-child){border-bottom: 1px solid rgb(204, 204, 204);}
 	.aft-pager{position:static; display:inline-block; margin: 0 7px;}
-	.aft-pager ~.aft-pager, .indented1 +h2 +.aft-pager, .aft-postcontent +h2 +.aft-pager
+	.aft-pager ~.aft-pager,
+	.indented1 +h2 +.aft-pager,
+	.aft-postcontent +h2 +.aft-pager
+	.ctools-collapsible-container +h2 +.aft-pager
 		{position: fixed; display: block; left:-7px; bottom:8px; height: 26px; padding:0 0 8px}
 	.aft-pager ~.aft-pager:hover, .indented1 +h2 +.aft-pager:hover{height: 29px; padding:0;}
 	.aft-pager:hover{margin-top: 6px; background-color: rgba(215,215,221,.55)}
